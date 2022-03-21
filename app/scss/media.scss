@@ -1,0 +1,106 @@
+@media (max-width: 991px) {
+	.header {
+		&__logo {
+			top: 55px;
+		}
+		&__logo-img {
+			width: 120px;
+		}
+	}
+
+	.menu {
+		&__list {
+			&:not(:first-child) {
+				&::before {
+					transform: translate(-10px, 8px);
+				}
+			}
+		}
+	}
+
+	.promo-carousel {
+		padding-top: 45px;
+	}
+
+	.services,
+	.reviews,
+	.about {
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		display: block;
+		&-nav {
+			align-items: center;
+		}
+		&-toggler {
+			border: none;
+			&:focus {
+				color: transparent;
+			}
+		}
+
+		.offcanvas {
+			width: 70%;
+			background-image: linear-gradient(#494949, #000000);
+			&-title {
+				margin: 0 auto;
+				color: #ffffff;
+			}
+		}
+	}
+	
+	.nav-link {
+		margin-top: 25px;
+		font-size: 24px;
+	}
+
+	.btn-close {
+		background-image: url("../img/cross_icon.svg");
+	}
+
+	.header {
+		&__logo {
+			top: -10px;
+			left: 20px;
+		}
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.promo-carousel {
+		padding-top: 5px;
+	}
+
+	.services,
+	.reviews,
+	.about {
+		padding-top: 30px;
+	}
+
+	.section-title {
+		font-size: 32px;
+	}
+
+	.masters {
+		&__image {
+			width: 120px;
+			height: 120px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.footer {
+		&__title {
+			font-size: 12px;
+		}
+		&__link {
+			font-size: 26px;
+		}
+	}
+}

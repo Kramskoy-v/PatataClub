@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PaTaTa Club - мотосервис</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="header__logo" id="logo">
+					<img src="img/logo.jpg" class="header__logo-img" alt="logo">
+				</div>
+				<nav class="col-lg-10 col-md-12 navigation">
+					<ul class="menu">
+						<li class="menu__list">
+							<a href="#services" class="menu__link">Услуги</a>
+						</li>
+						<li class="menu__list">
+							<a href="#reviews" class="menu__link">Отзывы</a>
+						</li>
+						<li class="menu__list">
+							<a href="#about" class="menu__link">О нас</a>
+						</li>
+						<li class="menu__list">
+							<a href="#contacts" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="navbar navbar-dark fixed-top ps-0 pe-0">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="#logo"
+										class="nav-link text-white"> PaTaTa Club</a></h5>
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+									aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+									<li class="nav-item">
+										<a href="#services" class="nav-link">Услуги</a>
+									</li>
+									<li class="nav-item">
+										<a href="#reviews" class="nav-link">Отзывы</a>
+									</li>
+									<li class="nav-item">
+										<a href="#about" class="nav-link">О нас</a>
+									</li>
+									<li class="nav-item">
+										<a href="#contacts" class="nav-link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="promo-carousel">
+			<div class="container-xxl">
+				<div class="col-12 mx-auto">
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/promo_slide_1_1.jpg" class="d-block w-100" alt="slide 1">
+							</div>
+							<div class="carousel-item">
+								<img src="img/promo_slide_2_1.jpg" class="d-block w-100" alt="slide 2">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services" id="services">
+			<div class="container">
+				<h2 class="section-title">Услуги для Ваших мотоциклов
+				</h2>
+				<div class="row justify-content-around">
+					<div class="col-lg-5 col-md-9 col-sm-10 col-11 services__card card-style">
+						<table class="services__table">
+							<tr class="services__row">
+								<td class="services__col-left">Шиномонтаж БК</td>
+								<td class="services__col-right">300 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Шиномонтаж камерного колеса</td>
+								<td class="services__col-right">500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Балансировка</td>
+								<td class="services__col-right">300 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Снятие/установка колеса</td>
+								<td class="services__col-right">600 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Ремонт покрышки (установка латки)
+								</td>
+								<td class="services__col-right">450 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Переспицовка колеса</td>
+								<td class="services__col-right">от 3500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Правка колёсного диска</td>
+								<td class="services__col-right">от 2000 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена нипеля</td>
+								<td class="services__col-right">200 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Снятие/установка тормозного диска</td>
+								<td class="services__col-right">500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена подшипников ступицы</td>
+								<td class="services__col-right">1500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена подшипников рулевой колонки</td>
+								<td class="services__col-right">от 3000 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Ремонт вилки</td>
+								<td class="services__col-right">от 5000 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Обслуживание цепи (чистка+смазка)</td>
+								<td class="services__col-right">1200 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Регулировка цепи</td>
+								<td class="services__col-right">от 500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена цепи и звёзд</td>
+								<td class="services__col-right">3500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена масла в ДВС+замена масляного фильтра</td>
+								<td class="services__col-right">750 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена масла в редукторе</td>
+								<td class="services__col-right">500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена масла в КПП</td>
+								<td class="services__col-right">от 500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена охлаждающей жидкости</td>
+								<td class="services__col-right">1250 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена тормозных колодок (1суппорт)</td>
+								<td class="services__col-right">650 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Ремонт суппорта</td>
+								<td class="services__col-right">2500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Ремонт главного тормозного цилиндра</td>
+								<td class="services__col-right">2500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена тормозной жидкости (1 суппорт)</td>
+								<td class="services__col-right">650 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Удаление воздуха из тормозной системы (1 суппорт)</td>
+								<td class="services__col-right">650 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Регулировка зазоров клапанов</td>
+								<td class="services__col-right">от 3500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена воздушного фильтра</td>
+								<td class="services__col-right">от 1000 ₽</td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-lg-5 col-md-9 col-sm-10 col-11 services__card card-style">
+						<strong>Ремонт карбюраторов выполняется ТОЛЬКО при наличии ремкомплекта.
+							<br>Без ремкомплекта не вскрываем!</strong>
+						<table class="services__table">
+							<tr class="services__row">
+								<td class="services__col-left">Замена свечей зажигания 1шт</td>
+								<td class="services__col-right">250 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замер компрессии 1цилиндр</td>
+								<td class="services__col-right">500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Замена дисков сцепления</td>
+								<td class="services__col-right">3500 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Организация доступа (включает в себя снятие/установку
+									пластиковых элементов и топливного бака)</td>
+								<td class="services__col-right">1500₽/час</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left"><b>Диагностика мотоцикла общая:</b></td>
+								<td rowspan="11" class="services__col-right">4000 ₽</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Визуальный внешний осмотр
+									(Проверка целостности внешних элементов, защиты, ветрозащиты, декора отделки;
+									Проверка на работоспособность всех органов управления-рычаги, тросики, педали,
+									пульты, тяги); Оценка ходовой части (рама, подвеска, крепления ДВС) на предмет
+									повреждений и ремонта</td>
+
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Визуальная и по возможности техническая оценка
+									состояния расходников (колёсных дисков, покрышек, тормозных колодок, масла,
+									антифриза, тормозной жидкости)</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Замер компрессии</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Проверка компановки электрооборудования</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Проверка корректности установки доп.оборудования</td>
+
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Тест АКБ</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Тест рабочего напряжения</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Запуск двигателя (проверка на наличие посторонних шумов
+									и корректности отклика на ручку газа)</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">— Проверка двигателя и системы охлаждения на рабочий
+									температурный режим</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">—Визуальная оценка загрязнения радиатора</td>
+							</tr>
+							<tr class="services__row">
+								<td class="services__col-left">Капитальный ремонт ДВС</td>
+								<td class="services__col-right">от 40 000₽</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<h2 class="section-title">
+					Отзывы
+				</h2>
+				<div class="row mt-100">
+					<div class="accordion col-11 mx-auto ps-0 pe-0" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Отзывы Google maps
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/google_1.png" alt="avatar googlemaps" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Vell</dt>
+											<dd class="card__desc">
+												ТО на высшем уровне!
+												Ремонт качественный. Цена полностью соответствует.
+												Очень ответственные работники. Определенно приеду на ТО снова. Спасибо
+												вам огромное!
+											</dd>
+										</dl>
+									</div>
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/google_2.png" alt="avatar googlemaps" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Андрей</dt>
+											<dd class="card__desc">Заехал в этот сервис промыть и смазать цепь на
+												мотоцикле, сделали отлично, без очереди, подтянули цепь.) Ребята
+												отличные, дело своё знают.👌🏻 Рекомендую.
+											</dd>
+										</dl>
+									</div>
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/google_3.png" alt="avatar googlemaps" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Александр</dt>
+											<dd class="card__desc">
+												Сервис выше всяких похвал,ребята молодцы!цены не задирают!мне все
+												понравилось!очень клёвый сервис!мастера своего дела!
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Отзывы Яндекс карты
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/yandex_1.jpg" alt="аватар яндекс карты" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Алиса</dt>
+											<dd class="card__desc">
+												Были в июле 2020 года, ехали на мотоцикле Yamaha Royal 1300, с Крыма
+												домой, в Москву. Сломалась ручка газа, ребята с Patata Club все
+												починили, заодно почистили карбюратор, до Москвы мотоцикл просто
+												долетел! Ремонт был выполнен качественно, работают фанаты своего дела,
+												умеют, знают, делают! Надеемся еще повидаться, огромная благодарность
+												гостеприимной хозяйке Наташе! Всем рекомендую мотосервис!
+											</dd>
+										</dl>
+									</div>
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/yandex_2.jpg" alt="аватар яндекс карты" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Константин</dt>
+											<dd class="card__desc">
+												Отличный чистый мотогараж.
+												Ребята - настоящие профессионалы, которые любят то, чем занимаются.
+												С Кавы VN800 слетела цепь и повредила крышку звезды. Приняли, утешили,
+												вправили мозги и всё починили.
+												Неистово рекомендую.
+											</dd>
+										</dl>
+									</div>
+									<div class="accordion__card">
+										<div class="card__image">
+											<img src="img/yandex_3.png" alt="аватар яндекс карты" class="card__img">
+										</div>
+										<dl class="card__info">
+											<dt class="card__name">Василий</dt>
+											<dd class="card__desc">
+												Отличный сервис!!! 29.07.2021 по дороге из Санкт-Петербурга, под
+												Воронежем, протерлось заднее колесо на моём Harley Davidson fat boy.
+												Нужен был срочный шиномонтаж, несмотря на то что рабочий день подходил к
+												концу, Алексей согласился нам помочь, за что ему огромная
+												благадарность!!!
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container">
+				<h2 class="section-title">
+					О нас
+				</h2>
+				<div class="row">
+					<div class="col-lg-12 col-md-10 col-11 about__company card-style mx-auto">
+						<p class="about__desc">Любовь к мотоциклам начинается с первой поездки.
+							Именно поэтому мы много и далеко ездили.
+							Именно поэтому мы проводили бессонные ночи в ремонте...
+							...И создали мастерскую PaTaTaClub.
+							Чтобы ваши дороги стали действительно добрыми.</p>
+
+					</div>
+				</div>
+				<div class="row masters justify-content-around">
+					<div class="col-lg-5 col-md-8 col-10 masters__card card-style">
+						<div class="masters__image">
+							<img src="img/master_lex.jpg" alt="Мастер Алексей" class="masters__img" width="200">
+						</div>
+						<h3 class="masters__name">Старший мастер <br> Алексей</h3>
+						<p class="masters__desc">
+							Руководитель мастерской PaTaTaClub и старший механик. Кастом инженер.
+						</p>
+					</div>
+					<div class="col-lg-5 col-md-8 col-10 masters__card card-style">
+						<div class="masters__image">
+							<img src="img/master_nata.jpg" alt="Мастер Наталья" class="masters__img">
+						</div>
+						<h3 class="masters__name">Мастер Наталья</h3>
+						<p class="masters__desc">
+							Уникальная девушка, которая качественно и тонко настраивает работу карбюраторов.
+						</p>
+					</div>
+					<div class="col-lg-5 col-md-8 col-10 masters__card card-style">
+						<div class="masters__image">
+							<img src="img/master_serge.jpg" alt="Мастер Имя" class="masters__img">
+						</div>
+						<h3 class="masters__name">Мастер Сергей</h3>
+						<p class="masters__desc">
+							Мотохирург! Работает за стирильным столом, используя точные разнообразные инструменты.
+						</p>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-12 mx-auto">
+						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="img/slide_1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide_2.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide_3.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/slide_4.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+								data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+								data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<h2 class="section-title">
+					Как нас найти
+				</h2>
+				<div class="row justify-content-around">
+					<div class="col-lg-7 col-md-11 col-11 mt-60">
+						<div style="position:relative;overflow:hidden;"><a
+								href="https://yandex.ru/maps/org/patata_club/235960830034/?utm_medium=mapframe&utm_source=maps"
+								style="color:#eee;font-size:12px;position:absolute;top:0px;">Patata Club</a><a
+								href="https://yandex.ru/maps/193/voronezh/category/motorcycle_repair/41235778543/?utm_medium=mapframe&utm_source=maps"
+								style="color:#eee;font-size:12px;position:absolute;top:14px;">Ремонт мототехники в
+								Воронеже</a><a
+								href="https://yandex.ru/maps/193/voronezh/category/motorcycle_spare_parts/41235743198/?utm_medium=mapframe&utm_source=maps"
+								style="color:#eee;font-size:12px;position:absolute;top:28px;">Запчасти для мототехники в
+								Воронеже</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU5IBBUXC" width="100%"
+								height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-8 col-10 card-style">
+						<h4 class="contact__title">
+							Мы находимся по адресу:
+						</h4>
+						<p class="contacts__address">
+							город Воронеж <br>
+							улица Дружинников 7Д <br>
+						</p>
+						<h5 class="contacts__sub-title">
+							График работы:
+						</h5>
+						<ul class="contacts__mode">
+							<li class="contacts__list">Понедельник - Пятница</li>
+							<li class="contacts__list">09:00 - 19:00</li>
+							<li class="contacts__list">* * * * *</li>
+							<li class="contacts__list">Суббота</li>
+							<li class="contacts__list">10:00 - 18:00</li>
+							<li class="contacts__list">* * * * *</li>
+							<li class="contacts__list">Воскресенье - Выходной</li>
+							<li class="contacts__list"></li>
+						</ul>
+						<h5 class="contacts__sub-title">
+							Номер телефона:
+						</h5>
+						<a href="tel:+79802483458" class="contacts__phone">+7 980 248 34 58</a>
+					</div>
+				</div>
+
+			</div>
+			</div>
+		</section>
+		<section class="consult" id="consult">
+			<div class="container">
+				<h2 class="section-title">Задайте свой вопрос</h2>
+				<form class="feed-form" action="#" id="form" method="post" onsubmit="send(event, 'send.php')">
+					<input required placeholder="Ваше имя" type="text" name="username">
+					<input required placeholder="Ваш номер телефона" type="tel" pattern="[0-9]{7,11}" name="userphone">
+					<textarea placeholder="Введите вопрос" name="usertext" id="usertext" cols="30" rows="1"></textarea>
+					<div class="checkbox">
+						<input id="usercheck" checked required type="checkbox" name="usercheck" class="checkbox__input">
+						<label for="usercheck" class="checkbox__label"><span>Я даю своё согласие на обработку
+								персональных данных в соответствии с <a href="personalData.html" class="checkbox__link"
+									target="blank">Условиями</a>*</span>
+						</label>
+					</div>
+					<button class="button">Отправить</button>
+				</form>
+			</div>
+		</section>
+		<div class="messengers">
+			<a href="tel:+79802483458" class="messengers__link">
+				<i class="fas fa-phone"></i></a>
+
+			<a href="https://wa.me/+79802483458" target="_blank" class="messengers__link">
+				<i class="fab fa-whatsapp"></i></a>
+			<a href="tg://resolve?domain=patata_club" class="messengers__link" target="_blank">
+				<i class="fab fa-telegram-plane"></i></a>
+
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-lg-5 col-md-8 col-12 d-flex">
+					<h4 class="footer__title">
+						Мы в социальных сетях
+					</h4>
+					<p class="footer__socials">
+						<a href="https://vk.com/patata_club" class="footer__link" target="_blank">
+							<i class="fab fa-vk"></i>
+						</a>
+						<a href="https://www.instagram.com/patataclub_/" class="footer__link" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal">
+		<div class="modal__window">
+			<span class="modal__close">&times;</span>
+			<h3 class="modal__title">Спасибо за обращение!</h3>
+			<p class="modal__desc">Мы свяжемся с Вами по указанному номеру в ближайшее время.</p>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
