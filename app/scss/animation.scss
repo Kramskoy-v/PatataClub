@@ -1,0 +1,24 @@
+.services {
+	&__card {
+		opacity: 0;
+		transform: translateY(100px);
+		transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+	}
+	.animation {
+		opacity: 1;
+		transform: translateY(0);
+		transition-delay: 0.3s;
+	}
+}
+
+.masters {
+	&__card {
+		opacity: 0;
+		transform: rotateX(90deg);
+		transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+	}
+	.animation {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}

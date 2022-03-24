@@ -2,10 +2,9 @@
 	.header {
 		&__logo {
 			top: 55px;
+			width: 140px;
 		}
-		&__logo-img {
-			width: 120px;
-		}
+	
 	}
 
 	.menu {
@@ -63,8 +62,7 @@
 
 	.header {
 		&__logo {
-			top: -10px;
-			left: 20px;
+			top: 15px;
 		}
 	}
 
@@ -95,6 +93,14 @@
 }
 
 @media (max-width: 575px) {
+	.header {
+		&__logo {
+		 width: 110px;
+		}
+	
+	}
+
+
 	.footer {
 		&__title {
 			font-size: 12px;

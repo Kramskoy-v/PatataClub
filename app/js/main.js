@@ -32,3 +32,24 @@ function send(event, php) {
 	req.onerror = function () { alert('Ошибка отправки запроса'); };
 	req.send(new FormData(event.target));
 }
+
+//animations
+document.addEventListener('DOMContentLoaded', () => {
+	const scrollItems = document.querySelectorAll('.scroll-item');
+
+const scrollAnimation = () => {
+	let windowCenter = (window.innerHeight / 1.5) + window.scrollY;
+	scrollItems.forEach(el => {
+		let scrollOffset = el.offsetTop;
+		if (windowCenter >= scrollOffset) {
+			el.classList.add('animation');
+		} else {
+			el.classList.remove('animation');
+		}
+	})
+	};
+	scrollAnimation(); 
+	window.addEventListener('scroll', () => {
+		scrollAnimation(); 
+	});
+});
